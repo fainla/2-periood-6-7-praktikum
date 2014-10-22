@@ -50,6 +50,16 @@
       
       <input id="food" type="text" name="food">
    </div>
+   
+<br>
+      <div class= "form_message">
+      <?php  if ($isSubmitted) {echo $emailMessage;}?>
+         
+         <label for="email">E-mail:</label>
+      
+      <input id="email" type="text" name="email">
+   </div>
+
    <div>
    	
       <input type="submit" value="Saada" name="submit">

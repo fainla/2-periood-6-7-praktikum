@@ -6,6 +6,7 @@
 		$username = $_POST["username"];
 		$age = $_POST["age"];
 		$food = $_POST["food"];
+		$email = $_POST["email"];
 	}
 	$min= 2;
 	$max= 20;
@@ -36,5 +37,13 @@
 	} else {
 		
 		$foodMessage= '<div class= "form_message form_error"> Sööki pole valikus</div>';
+	}
+
+		if (isset($email) and preg_match("/@/", $email))
+		{
+		$emailMessage= '<div class= "form_message form_notice"> E-mail sobis </div>';
+	} else {
+		
+		$emailMessage= '<div class= "form_message form_error"> E-mail on vale </div>';
 	}
 ?>
